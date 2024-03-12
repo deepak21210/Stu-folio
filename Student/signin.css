@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root
+{
+   --primary : #313493;
+   --secondary : white; 
+   /* #26a7de */
+}
+
+body{
+    background-color: var(--secondary);
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    background-color: var(--secondary);
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    background-color: var(--primary);
+    width: 40%;
+    margin: 10px;
+    border-radius: 25px;
+    color: var(--secondary);
+    position: relative;
+}
+
+article h1{
+  position: absolute;
+  top: 20%;
+  font-size: 30px;
+}
+
+article h3{
+    position: absolute;
+    top: 30%;
+    font-size: 20px;
+}
+
+article h2{
+    position: absolute;
+    top: 35%;
+    font-size: 20px;
+}
+
+article img
+{
+    position: absolute;
+    bottom: 0;
+    width: 400px;
+    height: 300px;
+}
+
+form{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 25px;
+}
+
+.info
+{
+    position: absolute;
+    left: 0;
+}
+
+.info img
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+}
+
+.info1 input
+{
+    border: none;
+    border-bottom: 1px solid ;
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: bolder;
+
+}
+
+.info1 input:focus
+{
+  outline: none;
+  border-color:var(--primary);
+  color:var(--primary);
+  font-size:medium;
+}
+
+.btn
+{
+    position: absolute;
+    left: 0;
+    top: 70%;
+    cursor: pointer;
+    padding: 5px;
+    background-color: var(--primary);
+    border-radius: 15px;
+    width: 30%;
+    color: var(--secondary);
+    border: 1px solid black;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    background-color: #dcfeff;
+    color: var(--primary);
+    border-color:var(--primary) ;
+}
+
+form h3{
+    position: absolute;
+    left: 0;
+    top: 80%;
+    font-size: 18px;
+}
+
+form h3 a
+{
+    color: var(--primary);
+    font-size: 22px;
+}
+
+form h3 a:hover{
+    color: blue;
+}
+.image
+{
+    position: absolute;
+    bottom: 65%;
+}
+
+.border img
+{
+    height: 350px;
+    width: 350px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+

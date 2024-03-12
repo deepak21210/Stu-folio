@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+:root
+{
+   --primary : #313493;
+   --secondary : white; 
+   /* #26a7de */
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left
+{
+    width: 30%;
+    min-height: 96vh;
+    background: var(--primary);
+    border-radius: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+#left{
+    border-radius: 70px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid white;
+    position: absolute; 
+    top: 15px;
+    left: 115px;
+    margin-top: 40px;
+}
+
+#rollno{
+    color: var(--secondary);
+    position: absolute;
+    left: 145px;
+    top: 180px;
+    margin-top: 40px;
+}
+
+.right{
+    width: 70%;
+    min-height: 96vh;
+    position: relative;
+}
+
+#wel
+{
+    position: absolute;
+    top: 5%;
+    right: 40%;
+}
+
+#wel span{
+    color: white;
+    background: var(--primary);
+    padding: 5px;
+}
+
+.result{
+    position: absolute;
+    top:40%;
+    left: 32%;
+    margin-top: 40px;
+}
+
+.res
+{
+    border: none;
+    background : transparent;
+    color: white;
+    margin: 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.res:hover{
+    text-decoration: underline;
+}
+
+.res a{
+    color: white;
+}
+
+table, th, td 
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+ }
+  
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+.tbl
+{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
