@@ -102,36 +102,8 @@ if ($result = mysqli_query($conn, $sql)) {
          </div>
     </section>
 
-  
 
-    <div class="popup" >
-         <h1>hey</h1>
-         <button class="view">view</button>
-    </div>
 
-<?php 
-  if($_SESSION['status']==1){
-   ?>
-    <script>
-       const btn = document.querySelector('.btn');
-       const popup = document.querySelector('.popup');
-       btn.addEventListener('click',()=>{
-          popup.classList.toggle('hide');
-       })
-    </script>
-<?php
-  }
-    ?>
-    <!-- <script>
-       
-         const view = document.querySelector('.view');
-         view.addEventListener('click',()=>{
-         const btn = document.querySelector('.btn');
-         const popup = document.querySelector('.popup');
-         popup.classList.toggle('hide');
-         console.log(popup.classList);
-        })
-    </scrip> -->
 </body>
 
 </html>
