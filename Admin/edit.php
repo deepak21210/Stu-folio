@@ -27,16 +27,8 @@
 
     body {
         font-family: 'Poppins';
-        position: relative;
     }
 
-    .hide{
-       width: 500px;
-       height: 500px; 
-      background-color: #4d44b5;
-      position: absolute;
-      top: 0;
-    } 
 </style>
 
 <?php
@@ -89,7 +81,7 @@ if ($result = mysqli_query($conn, $sql)) {
                            </div> 
                                          
                             <div class="flex justify-around items-center">            
-                              <a class="bg-red-500 text-white text-center px-2 py-1  w-[30%]" href="#">Delete</a>
+                              <a class="bg-red-500 text-white text-center px-2 py-1  w-[30%]" href="delete.php?id=<?php echo $event_id; ?>">Delete</a>
                               <a class="bg-green-500 text-white text-center px-2 py-1  w-[40%]" href="#">Edit Content</a>
                               <a class="btn bg-blue-500 text-white text-center px-2 py-1  w-[30%]" href="view.php?id=<?php echo $event_id; ?>" >View</a>
                                
@@ -104,34 +96,7 @@ if ($result = mysqli_query($conn, $sql)) {
 
   
 
-    <div class="popup" >
-         <h1>hey</h1>
-         <button class="view">view</button>
-    </div>
-
-<?php 
-  if($_SESSION['status']==1){
-   ?>
-    <script>
-       const btn = document.querySelector('.btn');
-       const popup = document.querySelector('.popup');
-       btn.addEventListener('click',()=>{
-          popup.classList.toggle('hide');
-       })
-    </script>
-<?php
-  }
-    ?>
-    <!-- <script>
-       
-         const view = document.querySelector('.view');
-         view.addEventListener('click',()=>{
-         const btn = document.querySelector('.btn');
-         const popup = document.querySelector('.popup');
-         popup.classList.toggle('hide');
-         console.log(popup.classList);
-        })
-    </scrip> -->
+   
 </body>
 
 </html>
