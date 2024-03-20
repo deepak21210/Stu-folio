@@ -82,7 +82,7 @@ if ($result = mysqli_query($conn, $sql)) {
                                          
                             <div class="flex justify-around items-center">            
                               <a class="bg-red-500 text-white text-center px-2 py-1  w-[30%]" href="delete.php?id=<?php echo $event_id; ?>">Delete</a>
-                              <a class="bg-green-500 text-white text-center px-2 py-1  w-[40%]" href="#">Edit Content</a>
+                              <a class="bg-green-500 text-white text-center px-2 py-1  w-[40%]" href="edit_content.php?id=<?php echo $event_id; ?>">Edit Content</a>
                               <a class="btn bg-blue-500 text-white text-center px-2 py-1  w-[30%]" href="view.php?id=<?php echo $event_id; ?>" >View</a>
                                
                             </div>
