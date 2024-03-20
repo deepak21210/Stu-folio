@@ -7,6 +7,8 @@ if(!isset($_POST['submit'])){
     $title = $_POST['name'];
     $link = $_POST['link'];
     $msg = $_POST['message'];
+    $link = substr($link,-31);
+             
 
     $query = mysqli_query($conn,"Insert into events (Image,title,link,detail) values ('$file_name','$title','$link','$msg')");
 
